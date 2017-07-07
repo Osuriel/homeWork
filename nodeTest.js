@@ -4,7 +4,7 @@
 var exec = require('child_process').exec;
 var cmd = 'git log';
 
-
+console.log('Omar Custom git log:');
 exec(cmd, function(error, stdout, stderr) {
   stdout.split('commit ')
     .forEach(currentCommit => {
@@ -27,4 +27,3 @@ exec(cmd, function(error, stdout, stderr) {
       }
     });
 });
-
